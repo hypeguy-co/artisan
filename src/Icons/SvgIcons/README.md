@@ -1,0 +1,1 @@
+SVG icons must be saved into a grid 24x24x in order to properly work
