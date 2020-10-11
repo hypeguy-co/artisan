@@ -3,6 +3,13 @@ import { theme } from '@chakra-ui/core';
 // Let's say you want to add custom colors
 export default {
   ...theme,
+  styles: {
+    global: {
+      body: {
+        minHeight: 'initial'
+      }
+    }
+  },
   'colors': {
     ...theme.colors,
     primary: {

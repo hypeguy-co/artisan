@@ -2,12 +2,10 @@ import React from 'react';
 import useWindowSize from './hooks/useWindowSize';
 import theme from './theme';
 
-import {
-  ChakraProvider, 
-  Banner,
-  Test,
-  Text
-} from '../dist';
+import * as CK from '../';
+
+console.info(CK)
+
 import './App.css';
 
 const Data = () => {
@@ -15,15 +13,19 @@ const Data = () => {
 
   return (
     <div>
-      <ChakraProvider theme={theme}>
-        <Banner />
+      <CK.ChakraProvider theme={theme}>
+        <CK.Banner />
 
-        <Text>
+        <CK.Text>
           WTF
-        </Text>
-      </ChakraProvider>
-      <Test/>
-      test
+          WTF
+          WTF
+          WTF
+          WTF
+        </CK.Text>
+      </CK.ChakraProvider>
+      <CK.Test/>
+      {/* test */}
     </div>
   )
 }

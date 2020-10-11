@@ -1,26 +1,32 @@
 {
-  "name": "silmaril",
+  "name": "artisan",
   "version": "1.0.0",
   "description": "Base construction of scroll game system ",
   "repository": "git@github.com:hypeguy-co/silmaril.git",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "typings": "dist/types/index.d.ts",
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd examples && yarn start",
-    "build": "rollup -c"
+    "build:esm": "BABEL_ENV=esm babel src --root-mode upward --extensions .js,.ts,.tsx -d dist/esm --source-maps",
+    "build:cjs": "BABEL_ENV=cjs babel src --root-mode upward --extensions .js,.ts,.tsx -d dist/cjs --source-maps",
+    "build": "yarn build:esm && yarn build:cjs",
+    "webpack": "webpack"
   },
   "devDependencies": {
+    "@babel/cli": "^7.11.6",
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-optional-chaining": "^7.9.0",
     "@babel/plugin-transform-modules-commonjs": "^7.9.0",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-es2017": "^7.0.0-beta.53",
     "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
     "@rollup/plugin-alias": "^3.1.1",
     "@rollup/plugin-commonjs": "^15.1.0",
     "@rollup/plugin-image": "^2.0.5",
@@ -46,8 +52,14 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.3",
     "rollup-plugin-root-import": "^1.0.0",
+    "source-map-loader": "^1.1.1",
     "style-loader": "^1.2.1",
-    "typescript": "^4.0.3"
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
   },
   "dependencies": {
     "@chakra-ui/core": "^1.0.0-next.7",
@@ -59,8 +71,8 @@
     "react-truncate": "^2.4.0"
   },
   "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
+    "react": "16.x",
+    "react-dom": "16.x"
   },
   "husky": {
     "hooks": {

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../src/Icons/SvgIcons/index.tsx"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;AAAA;;AACA","sourcesContent":["import Shield from './shield.svg'\nimport Hexagon from './hexagon.svg'\n\nexport {\n  Shield,\n  Hexagon\n}\n"],"file":"index.js"}

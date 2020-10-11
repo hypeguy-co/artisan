@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/Layout/index.js"],"names":[],"mappings":"AAAA;AACA;AAEA;AACA;AACA;AACA","sourcesContent":["// import NavigationContent from './NavigationContent/index.tsx';\n// import Base from './Base';\n\n// export {\n//   Base,\n//   NavigationContent\n// };\n"],"file":"index.js"}
