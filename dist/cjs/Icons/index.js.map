@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/Icons/index.tsx"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;AAAA;;AACA","sourcesContent":["import IconInventory from './IconInventory';\nimport IconBadge from './IconBadge';\n\nexport {\n  IconInventory,\n  IconBadge\n}\n"],"file":"index.js"}

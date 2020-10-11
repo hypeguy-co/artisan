@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 
-import { styled, useTheme } from '~/themes';
-import { Hexagon, Shield } from '~/Icons/SvgIcons';
-import { Box, BoxStructure } from '~/Box';
-import { Text } from '~/Text';
+import { styled, useTheme } from '../themes';
+import { Hexagon, Shield } from '../Icons/SvgIcons';
+import { Box, BoxStructure } from '../Box';
+import { Text } from '../Text';
 
 type baseElement = 'circle' | 'hexagon' | 'shield' | 'square' | 'rectangle';
 

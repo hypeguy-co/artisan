@@ -1,9 +1,9 @@
 import React from 'react';
-import { Text } from '~/Text';
-import { Box } from '~/Box';
-import { useTheme, styled, StyledThemeTypes } from '~/themes'
+import { Text } from '../Text';
+import { Box } from '../Box';
+import { useTheme, styled, StyledThemeTypes } from '../themes'
 import { Progress as ProgressChakra, ProgressProps as ProgressChakraProps } from '@chakra-ui/core';
-import { isHex } from '~/utils/colors'
+import { isHex } from '../utils/colors'
 
 interface ProgressProps {
   children: JSX.Element | string;

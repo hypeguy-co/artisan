@@ -1,6 +1,6 @@
 import { Divider as ChakraDivider } from '@chakra-ui/core';
 import styled from '@emotion/styled';
-import { isHex } from '~/utils/colors'
+import { isHex } from '../utils/colors'
 import { useTheme } from '@chakra-ui/core';
 
 const StyledDivider = styled(ChakraDivider)`

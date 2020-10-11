@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import { BoxProps } from '@chakra-ui/core';
-import { BoxStructure, Box } from '~/Box';
-import { Text } from '~/Text';
-import { Divider } from '~/Divider';
+import { BoxStructure, Box } from '../Box';
+import { Text } from '../Text';
+import { Divider } from '../Divider';
 
 interface HeaderProps extends BoxProps {
   children: JSX.Element | string;

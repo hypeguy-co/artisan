@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Truncate from 'react-truncate';
-import { Text } from '~/Text';
+import { Text } from '../Text';
  
 interface ReadMoreProps {
   children: JSX.Element,

@@ -1,22 +1,30 @@
 // import { ChakraProvider } from '@chakra-ui/core';
 import React from 'react';
-import { ChakraProvider } from '@chakra-ui/core';
+import { ChakraProvider , theme } from '@chakra-ui/core';
 import { Banner } from './Banner';
 import { Text } from './Text';
+import styled from '@emotion/styled';
 
 
 // const ChakraProvider = ({children}) => <>ChakraProvider{children}</>
 // const Banner = ({children}) => <Banner>{children}</Banner>
 
-console.info(Text)
+// console.info(Text)
+
+const StyledTest = styled.div`
+  display: block;
+  background-color: red;
+  color: green;
+`
 
 const Test = () => (
-  <div>
+  <StyledTest>
     Test
-  </div>
+  </StyledTest>
 )
 
 export {
+  theme,
   Test,
   Text,
   ChakraProvider,

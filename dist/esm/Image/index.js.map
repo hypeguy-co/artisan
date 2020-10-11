@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/Image/index.js"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;AAAA;;AACA","sourcesContent":["import ImageTheme from './ImageTheme';\nimport { Image } from '@chakra-ui/core';\n\nexport {\n  Image,\n  ImageTheme\n};\n"],"file":"index.js"}

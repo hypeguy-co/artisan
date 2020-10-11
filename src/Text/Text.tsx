@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import { Text as TextChakra, TextProps as TextChakraProps, useTheme } from '@chakra-ui/core';
-import { styled, StyledThemeTypes } from '~/themes';
+import { styled, StyledThemeTypes } from '../themes';
 
-import { isHex } from '~/utils/colors';
+import { isHex } from '../utils/colors';
 
 // interface TextProps extends  {
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Text } from '~/Text';
-import { Box } from '~/Box';
+import { Text } from '../Text';
+import { Box } from '../Box';
 
 const ListTitle = ({ title, children }) => {
   // The size prop affects the height of the button

@@ -1,28 +1,65 @@
+// {
+//   "compilerOptions": {
+//     "outDir": "./dist/",
+//     "module": "es6",
+//     "target": "es5",
+//     "allowJs": true,
+
+    
+//     "baseUrl": ".",
+//     "paths": {
+//       "~/*": ["./src/*"]
+//     },
+//     "noUnusedLocals": false,
+//     // "module": "esnext",
+//     "lib": ["dom", "esnext"],
+//     "moduleResolution": "node",
+//     "jsx": "react",
+//     "sourceMap": true,
+//     "esModuleInterop": true,
+//     "noImplicitReturns": true,
+//     "noImplicitThis": true,
+//     "noImplicitAny": false,
+//     "strictNullChecks": true,
+//     "suppressImplicitAnyIndexErrors": true,
+//     "noUnusedParameters": true,
+//     "allowSyntheticDefaultImports": true
+//   },
+//   "include": [
+//     "src",
+//     "node_modules/@chakra-ui",
+//     "node_modules/@styled-system", 
+//     "node_modules/@emotion"
+//   ]
+// }
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "~/*": ["./src/*"]
-    },
-    "noUnusedLocals": false,
+    "target": "es5",
     "module": "esnext",
     "lib": ["dom", "esnext"],
-    "moduleResolution": "node",
-    "jsx": "react",
+    "declaration": true,
     "sourceMap": true,
-    "esModuleInterop": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noImplicitAny": false,
-    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
     "suppressImplicitAnyIndexErrors": true,
-    "noUnusedParameters": true,
-    "allowSyntheticDefaultImports": true
+    "noImplicitAny": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true
   },
-  "include": [
-    "src",
-    "node_modules/@chakra-ui",
-    "node_modules/@styled-system", 
-    "node_modules/@emotion"
-  ]
+  "include": ["src"],
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS",
+      "resolveJsonModule": true,
+      "noImplicitAny": false
+    }
+  }
 }

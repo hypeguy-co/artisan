@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/Text/index.js"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;AAAA;;AACA","sourcesContent":["import Text from './Text';\nimport ReadMore from './ReadMore';\n\nexport {\n  Text,\n  ReadMore\n};\n"],"file":"index.js"}

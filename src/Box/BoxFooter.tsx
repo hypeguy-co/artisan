@@ -1,7 +1,7 @@
 import React from 'react';
-import { Text } from '~/Text';
-import { Box } from '~/Box';
-import { Divider } from '~/Divider';
+import { Text } from '../Text';
+import { Box } from '../Box';
+import { Divider } from '../Divider';
 
 interface FooterProps {
   children: JSX.Element | string;

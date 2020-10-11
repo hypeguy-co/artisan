@@ -1,4 +1,5 @@
 const path = require('path');
+const DuplicatePackageChecker = require("duplicate-package-checker-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -12,49 +13,29 @@ module.exports = {
     umdNamedDefine: true 
   },
   externals: {
-    react: 'react',
-    React: 'React',
-    'react-dom': 'react-dom',
+    react: 'commonjs react',
+    React: 'commonjs react',
+    'react-dom': 'commonjs react-dom',
   },
-  devServer: {
-    contentBase: __dirname,
-  },
-  resolve: {
-    alias: {
-      react: path.resolve('./node_modules/react'),
-      'react-dom': path.resolve('./node_modules/react-dom')
-    }
-  },
+  // plugins: [new DuplicatePackageChecker()],
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env", "@babel/preset-react"],
-            plugins: ["react-hot-loader/babel"]
-          }
-        }
-      },
-      {
-        test: /\.(png|jpg|gif)$/i,
-        use: [{
-          loader: 'url-loader',
-          options: {
-            limit: 8192,
-          },
-        }],
-      }, {
         test: /\.(js|jsx|tsx)$/i,
-        include: /node_modules\/react-dom/,
-        use: ['react-hot-loader/webpack'],
+        loader: 'babel-loader',
       },
       {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      }
-    ]
+        test: /\.js$/,
+        use: ["source-map-loader"],
+        enforce: "pre"
+      },
+    ],
+  },
+  resolve: {
+    extensions: [ '.tsx', '.ts', '.js' ],
+    // alias: {
+    //   react: path.resolve('./node_modules/react'),
+    //   'react-dom': path.resolve('./node_modules/react-dom')
+    // }
   }
 };
