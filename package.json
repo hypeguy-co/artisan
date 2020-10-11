@@ -12,8 +12,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd example-webpack && yarn start",
-    "start:next": "cd example-ssr && yarn dev",
+    "start:webpack": "cd example-webpack && yarn start",
+    "start:nextjs": "cd example-nextjs && yarn dev",
     "build:esm": "BABEL_ENV=esm babel src --root-mode upward --extensions .js,.ts,.tsx -d dist/esm --source-maps",
     "build:cjs": "BABEL_ENV=cjs babel src --root-mode upward --extensions .js,.ts,.tsx -d dist/cjs --source-maps",
     "build": "yarn build:esm && yarn build:cjs",
