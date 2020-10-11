@@ -11,7 +11,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _reactTruncate = _interopRequireDefault(require("react-truncate"));
 
-var _ = require("./");
+var _Text = require("../Text");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -36,7 +36,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 var DetailsLink = function DetailsLink(_ref) {
   var children = _ref.children,
       onClick = _ref.onClick;
-  return /*#__PURE__*/_react["default"].createElement(_.Text, {
+  return /*#__PURE__*/_react["default"].createElement(_Text.Text, {
     color: "primary.500",
     fontWeight: "bold",
     borderBottom: "1px solid",

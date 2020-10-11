@@ -9,7 +9,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _Text = require("../Text");
 
-var _ = require("./");
+var _Box = require("../Box");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -34,7 +34,7 @@ var Footer = function Footer(_ref) {
     fontSize: "14px",
     colorized: true
   }, props), children) : children;
-  return /*#__PURE__*/_react["default"].createElement(_.Box, null, wrapperComp);
+  return /*#__PURE__*/_react["default"].createElement(_Box.Box, null, wrapperComp);
 };
 
 var _default = Footer;

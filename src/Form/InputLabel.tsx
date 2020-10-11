@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text } from '~/Text';
-import { Divider } from '~/Divider';
+import { Text } from '../Text';
+import { Divider } from '../Divider';
 import { Input, Flex } from '@chakra-ui/core';
 
 interface InputLabelProps {

@@ -2,7 +2,7 @@ import React from 'react';
 import { Box } from '@chakra-ui/core';
 import styled from '@emotion/styled';
 
-import { Image } from '~/Image';
+import { Image } from '../Image';
 
 const StyledBox = styled(Box)`
   position: relative;

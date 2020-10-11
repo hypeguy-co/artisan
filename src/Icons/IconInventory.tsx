@@ -1,7 +1,7 @@
 import React from 'react';
-import { Text } from '~/Text';
-import { BoxStructure } from '~/Box';
-// import { TooltipItem } from '~/Tooltip';
+import { Text } from '../Text';
+import { BoxStructure } from '../Box';
+// import { TooltipItem } from '../Tooltip';
 import { Box, Img } from '@chakra-ui/core';
 
 interface IconInventoryProps {

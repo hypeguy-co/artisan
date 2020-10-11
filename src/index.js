@@ -1,6 +1,6 @@
 // import { ChakraProvider } from '@chakra-ui/core';
 import React from 'react';
-import { ChakraProvider } from '@chakra-ui/core';
+import { ChakraProvider , theme } from '@chakra-ui/core';
 import { Banner } from './Banner';
 import { Text } from './Text';
 import styled from '@emotion/styled';
@@ -24,6 +24,7 @@ const Test = () => (
 )
 
 export {
+  theme,
   Test,
   Text,
   ChakraProvider,

@@ -12,7 +12,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd examples && yarn start",
+    "start": "cd example-webpack && yarn start",
+    "start:next": "cd example-ssr && yarn dev",
     "build:esm": "BABEL_ENV=esm babel src --root-mode upward --extensions .js,.ts,.tsx -d dist/esm --source-maps",
     "build:cjs": "BABEL_ENV=cjs babel src --root-mode upward --extensions .js,.ts,.tsx -d dist/cjs --source-maps",
     "build": "yarn build:esm && yarn build:cjs",
@@ -43,10 +44,13 @@
     "babel-preset-react-app": "^9.1.2",
     "body-parser": "^1.19.0",
     "css-loader": "^4.3.0",
+    "duplicate-package-checker-webpack-plugin": "^3.0.0",
     "file-loader": "^6.1.0",
     "husky": "^4.3.0",
     "jest": "^26.5.2",
     "prop-types": "^15.7.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
     "rollup": "^2.29.0",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-node-resolve": "^5.2.0",
@@ -57,9 +61,7 @@
     "ts-loader": "^8.0.4",
     "typescript": "^4.0.3",
     "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "@chakra-ui/core": "^1.0.0-next.7",

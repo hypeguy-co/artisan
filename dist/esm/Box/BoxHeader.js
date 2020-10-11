@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _ = require("./");
+var _Box = require("../Box");
 
 var _Text = require("../Text");
 
@@ -26,7 +26,7 @@ var Header = function Header(_ref) {
       borderColorized = _ref.borderColorized,
       props = _objectWithoutProperties(_ref, ["children", "borderColorized"]);
 
-  return /*#__PURE__*/_react["default"].createElement(_.Box, props, /*#__PURE__*/_react["default"].createElement(_Text.Text, {
+  return /*#__PURE__*/_react["default"].createElement(_Box.Box, props, /*#__PURE__*/_react["default"].createElement(_Text.Text, {
     mt: {
       base: 4,
       md: 0

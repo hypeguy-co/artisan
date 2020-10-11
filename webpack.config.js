@@ -1,4 +1,5 @@
 const path = require('path');
+const DuplicatePackageChecker = require("duplicate-package-checker-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -16,6 +17,7 @@ module.exports = {
     React: 'commonjs react',
     'react-dom': 'commonjs react-dom',
   },
+  // plugins: [new DuplicatePackageChecker()],
   module: {
     rules: [
       {

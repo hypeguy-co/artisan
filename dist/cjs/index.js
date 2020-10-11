@@ -9,6 +9,12 @@ Object.defineProperty(exports, "ChakraProvider", {
     return _core.ChakraProvider;
   }
 });
+Object.defineProperty(exports, "theme", {
+  enumerable: true,
+  get: function get() {
+    return _core.theme;
+  }
+});
 Object.defineProperty(exports, "Banner", {
   enumerable: true,
   get: function get() {

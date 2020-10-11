@@ -1,7 +1,7 @@
 // import React, { FunctionComponent } from "react";
 // import cn from 'classnames';
 // import { useTheme, Flex, Box } from '@chakra-ui/core';
-// import { Text } from '~/Text';
+// import { Text } from '../Text';
 // import { useTranslateString } from "~/Translate";
 
 // interface NavigationContentHeaderProps {

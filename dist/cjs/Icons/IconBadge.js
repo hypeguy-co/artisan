@@ -9,7 +9,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _themes = require("../themes");
 
-var _SvgIcons = require("./SvgIcons");
+var _SvgIcons = require("../Icons/SvgIcons");
 
 var _Box = require("../Box");
 

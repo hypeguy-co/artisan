@@ -1,6 +1,6 @@
 import React  from 'react';
 import { Box } from '@chakra-ui/core';
-import { StyledThemeTypes, styled } from '~/themes';
+import { StyledThemeTypes, styled } from '../themes';
 
 import BoxHeader from './BoxHeader';
 import BoxFooter from './BoxFooter';
